@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(
+      90deg,
+      #B0E0E6,
+      #F5F5F5
+      );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+/*Desing do header*/
+  h1{
+    align-items: center;
+    font-weight: bold;
+    color: 	#A9A9A9;
+    padding: 20px ;
+    margin-left: 35px;
+  }
+
+  /* Quadrado no centro da tela */
+  .container {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Quadrado do input */
+  .new-task-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+  }
+  
+  /* desing do quadrado da task */
+  .new-task-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+  }
+  
+  /* desing do quadrado da task quando clica */
+  .new-task-container input:focus {
+    outline: none;
+    border-color: #41b883;
+  }
+  
+  /* desing do botão */
+  .new-task-button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #41b883;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+
+  .new-task-button:hover {
+    background-color: #00FA9A;
+    transform: scale(1.1);
+    transition: 0.75s;
+  }
+
+  
+  /* desing do quadrado inferior */
+  .tasks-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+
+  li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+  
+  .delete-icon {
+    cursor: pointer;
+  }
+
+  .item-pronto {
+    color: #41b883;
+    font-size: 18px;
+  }
+
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  span {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  
+  .fas.fa-check-square {
+    margin-right: 20px;
+  }
+  
+
+  /*Erro*/
+
+  .error  {
+    border: 2px solid red !important;
+  }
+  
+  .error::placeholder {
+    color: red;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
